@@ -22,6 +22,8 @@ contract ExampleToken {
     return _allowances[_owner][_spender];
   }
 
+  // ===== The annotation is added here: =====
+  /// if_succeeds {:msg "P1"} _balances[recipient] == old(_balances[recipient]) + amount
   function transfer(address _to, uint256 _value) external returns (bool) {
     address from = msg.sender;
     require(_value <= _balances[from]);
