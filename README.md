@@ -1,5 +1,5 @@
 # Scribble Getting Started
-This repository contains the files for the scribble (getting started guide)[https://github.com/ConsenSys/scribble/wiki/Documentation].
+This repository contains the files for the scribble [getting started guide](https://github.com/ConsenSys/scribble/wiki/Documentation).
 
 ## Files
 `token.sol` -> this is the plain file which the getting started guide lets you annotated
