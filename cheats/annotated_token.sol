@@ -23,7 +23,7 @@ contract ExampleToken {
   }
 
   // ===== The annotation is added here: =====
-  /// if_succeeds {:msg "P1"} _balances[_to] == old(_balances[_to]) + _value; 
+  /// if_succeeds {:msg "Transfer does not modify the sum of balances"} old(_balances[_to]) + old(_balances[msg.sender]) == _balances[_to] + _balances[msg.sender];
   function transfer(address _to, uint256 _value) external returns (bool) {
     address from = msg.sender;
     require(_value <= _balances[from]);
