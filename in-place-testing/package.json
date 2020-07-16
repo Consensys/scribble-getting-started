@@ -1,0 +1,26 @@
+{
+    "name": "in-place-testing",
+    "version": "0.0.0",
+    "license": "GPL-3.0-only",
+    "description": "Sample contract for in-place testing",
+    "scripts": {
+        "compile": "truffle compile",
+        "testrpc": "ganache-cli --deterministic --gasLimit 10000000 --allowUnlimitedContractSize",
+        "test": "truffle test",
+        "test:verbose": "VERBOSE=true truffle test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/consensys/scribble-getting-started"
+    },
+    "devDependencies": {
+        "ganache-core": "^2.6.1",
+        "ganache-cli": "^6.9.1",
+        "mocha": "^6.2.0",
+        "solhint": "^2.3.0",
+        "standard": "^14.0.2",
+        "truffle": "^5.0.41",
+        "truffle-assertions": "^0.9.1",
+        "web3": "^1.2.0"
+    }
+}
